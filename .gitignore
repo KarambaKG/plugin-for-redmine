@@ -24,12 +24,15 @@
 /db/*.sqlite3-journal
 
 # Ignore all logfiles and tempfiles.
+/log/production.log
 /log/*
 /tmp/*
 !/log/.keep
 !/tmp/.keep
 /public/assets
-*.idea
+.idea/**/workspace.xml
+.idea/dictionaries/
+.idea/vcs.xml
 .rvmrc
 
 # Ignore all paperclip uploaded files.

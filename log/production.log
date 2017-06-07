@@ -2063,3 +2063,20 @@ Processing by SettingsController#plugin as HTML
 Missing template, responding with 404
   Rendered common/error.html.erb within layouts/base (0.8ms)
 Completed 404 Not Found in 111ms (Views: 9.6ms | ActiveRecord: 91.3ms)
+Started GET "/issues/1?issue_count=1&issue_position=1" for 127.0.0.1 at 2017-06-07 16:41:38 +0600
+Processing by IssuesController#show as HTML
+  Parameters: {"issue_count"=>"1", "issue_position"=>"1", "id"=>"1"}
+  Current user: admin (id=1)
+  Rendered issues/_action_menu.html.erb (8.6ms)
+  Rendered issue_relations/_form.html.erb (2.4ms)
+  Rendered issues/_relations.html.erb (7.6ms)
+  Rendered issues/_action_menu.html.erb (1.9ms)
+  Rendered issues/_form_custom_fields.html.erb (0.9ms)
+  Rendered issues/_attributes.html.erb (20.0ms)
+  Rendered issues/_form.html.erb (188.8ms)
+  Rendered attachments/_form.html.erb (3.2ms)
+  Rendered issues/_edit.html.erb (214.1ms)
+  Rendered issues/_sidebar.html.erb (2.6ms)
+  Rendered watchers/_watchers.html.erb (6.8ms)
+  Rendered issues/show.html.erb within layouts/base (297.7ms)
+Completed 200 OK in 671ms (Views: 324.5ms | ActiveRecord: 110.7ms)
