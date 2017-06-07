@@ -412,6 +412,12 @@ ActiveRecord::Schema.define(version: 20160529063352) do
     t.string  "salt",       null: false
   end
 
+  create_table "polls", force: :cascade do |t|
+    t.string  "question"
+    t.integer "yes"
+    t.integer "no"
+  end
+
   create_table "projects", force: :cascade do |t|
     t.string   "name",               default: "",    null: false
     t.text     "description"
